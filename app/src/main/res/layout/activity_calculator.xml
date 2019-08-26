@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    tools:context=".CalculatorActivity">
+    tools:context=".calculatorfeature.CalculatorActivity">
 
     <EditText
-        android:id="@+id/tvNumberDisplay"
+        android:id="@+id/etNumberDisplay"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -79,7 +79,7 @@
         app:layout_constraintGuide_percent="0.88" />
 
     <Button
-        android:id="@+id/btnCE2"
+        android:id="@+id/btnCE"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -101,6 +101,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/equal"
+        android:onClick="calculateResult"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/glColumn3"
@@ -191,7 +192,7 @@
         app:layout_constraintTop_toTopOf="@+id/glRow3" />
 
     <Button
-        android:id="@+id/btnC13"
+        android:id="@+id/btnPlus"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -205,7 +206,7 @@
         app:layout_constraintTop_toTopOf="@+id/glRow3" />
 
     <Button
-        android:id="@+id/btnC12"
+        android:id="@+id/btnMinus"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -305,7 +306,7 @@
         app:layout_constraintTop_toTopOf="@+id/glRow1" />
 
     <Button
-        android:id="@+id/btnC5"
+        android:id="@+id/btnMultiply"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -319,7 +320,7 @@
         app:layout_constraintTop_toTopOf="@+id/glRow1" />
 
     <Button
-        android:id="@+id/btnDivision"
+        android:id="@+id/btnDivide"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -347,7 +348,7 @@
         app:layout_constraintTop_toTopOf="@+id/glDisplay" />
 
     <Button
-        android:id="@+id/btnC2"
+        android:id="@+id/btnClear"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
